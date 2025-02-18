@@ -1,0 +1,17 @@
+// global/_functions.scss
+
+// Convertir px a rem
+@function px-to-rem($px, $base-font-size: 16px) {
+    @return $px / $base-font-size * 1rem;
+  }
+  
+  // Oscurecer un color con un porcentaje dinámico
+  @function darken-dynamic($color, $percentage) {
+    @return darken($color, $percentage);
+  }
+  
+  // Escalar un tamaño
+  @function scale-size($size, $factor: 1.2) {
+    @return $size * $factor;
+  }
+  

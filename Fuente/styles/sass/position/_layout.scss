@@ -1,0 +1,74 @@
+// position/_layout.scss
+@use "../global/variables";
+
+.container-main {
+  width: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+
+$hover-brightness: 1.1;
+
+// Contenedor principal
+.updates {
+  background-color: variables.$background-unique;
+  padding: 50px 0;
+  text-align: center;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: variables.$text-color;
+  }
+
+  .updates-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  // Estilo para cada elemento
+  .update-item {
+    width: 120px;
+    height: 120px;
+    background-color: variables.$primary-color;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+
+    &:hover {
+      background-color: adjust-brightness(variables.$primary-color, $hover-brightness);
+      transform: scale(1.1);
+    }
+
+    // Estilo del SVG
+    img{
+      width: 40px;
+      height: 40px;
+      margin-bottom: 5px;
+      fill: white;
+    }
+  }
+}
+
+
+

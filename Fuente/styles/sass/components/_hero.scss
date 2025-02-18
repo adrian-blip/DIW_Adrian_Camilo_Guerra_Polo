@@ -1,0 +1,36 @@
+// components/_hero.scss
+@use "../global/mixins";
+@use "../global/variables";
+
+@mixin responsive-img($width, $height: auto) {
+  width: $width;
+  height: $height;
+  object-fit: cover;
+  display: block;
+};
+.imagen-hero {
+  @include responsive-img(100%, auto); // La imagen ocupa todo el ancho disponible
+  height: auto;
+  object-fit: cover;
+  max-height: 90vh; 
+}
+
+.position-msg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: variables.$text-color-unique;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  
+  img{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: justify;
+  }
+}
+
+.hero{
+  background-color: variables.$background-unique;
+  position: relative;
+}
+

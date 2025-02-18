@@ -1,0 +1,55 @@
+/* base/_tipografia.scss */
+@use "../global/variables";
+
+// global/_typography.scss
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../../../media/fonts/Nunito/Nunito-Regular.ttf');
+
+}
+
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../../../media/fonts/Raleway/Raleway-Regular.ttf');
+
+}
+
+
+
+
+
+
+h1, h2, h3, h4, h5, h6, nav {
+  font-weight: bold;
+  font-family: "Raleway";
+}
+
+h1 {
+  font-size: variables.$base-font-size*2;
+}
+
+h2 {
+  font-size: variables.$base-font-size*1;
+}
+
+h3 {
+  font-size: variables.$base-font-size*1.5;
+}
+
+p {
+  font-size: variables.$base-font-size;
+  font-family: 'Nunito';
+}
+a {
+  font-size: variables.$base-font-size;
+  font-family: 'Nunito';
+}
+
+
+footer{
+  color: variables.$text-color;
+  font-size: variables.$reduced-font-size;
+  font-weight: bold;
+}

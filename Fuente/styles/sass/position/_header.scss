@@ -1,0 +1,91 @@
+// position/_header.scss
+@use "../global/variables";
+
+.header {
+  background-color: variables.$background-unique;
+  padding: variables.$spacing-unit * 2;
+
+
+}
+
+.items-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px; // Ajusta según el tamaño deseado del logo
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none; 
+  height: 100vh;
+  width: 300px;
+  background-color: #fff;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+
+  .close-btn {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+    padding: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 2rem;
+    margin: 0;
+
+    li {
+      margin-bottom: 1.5rem;
+
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+
+        &:hover {
+          color: variables.$primary-color; /* Color al pasar el ratón */
+        }
+      }
+    }
+  }
+
+  &.active {
+    display: block; /* Menú visible al añadir la clase 'active' */
+  }
+}
+
+// Botón para abrir el menú
+.menu-toggle {
+
+  cursor: pointer;
+
+}
+
+.close-btn{
+  border: none;
+  background: none;
+  width: 32px;
+  font-size: 24px;
+  color: variables.$secondary-color;
+}

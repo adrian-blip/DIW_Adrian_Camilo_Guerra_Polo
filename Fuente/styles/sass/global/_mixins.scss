@@ -1,0 +1,49 @@
+// global/_mixins.scss
+@use "../global/variables";
+
+
+
+  @mixin responsive-img($width, $height: auto) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    display: block;
+  };
+  
+  // Fuente responsiva
+  @mixin responsive-font($mobile-size, $desktop-size) {
+    font-size: $mobile-size;
+  
+    @media (min-width: $breakpoint-md) {
+      font-size: $desktop-size;
+    }
+  }
+  
+
+
+
+  
+  @mixin media-sm {
+    @media (max-width: variables.$breakpoint-sm) {
+      @content;
+    }
+  }
+  
+  @mixin media-md {
+    @media (max-width: variables.$breakpoint-md) {
+      @content;
+    }
+  }
+  
+  @mixin media-lg {
+    @media (max-width: variables.$breakpoint-lg) {
+      @content;
+    }
+  }
+  
+  @mixin media-xl {
+    @media (max-width: variables.$breakpoint-xl) {
+      @content;
+    }
+  }
+  

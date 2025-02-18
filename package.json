@@ -1,0 +1,17 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "translating-sass",
+  "scripts": {
+    "compilar-sass": "sass Fuente/styles/sass:Fuente/styles/css --source-map",
+    "monitorizar-sass": "sass --watch Fuente/styles/sass:Fuente/styles/css --source-map"
+  },
+  "author": "Adrian Guerra",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2"
+  }
+}

@@ -1,0 +1,36 @@
+// position/_footer.scss
+@use "../global/variables";
+
+.footer {
+    background-color: variables.$text-color;
+    color: #fff;
+    text-align: center;
+    padding: variables.$spacing-unit * 4 0;
+  
+    a {
+      color: variables.$secondary-color;
+  
+      &:hover {
+        color: lighten(variables.$secondary-color, 10%);
+      }
+    }
+  
+    p {
+      margin-bottom: variables.$spacing-unit;
+    }
+  }
+
+  %base-flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .container-footer{
+    @extend %base-flex;
+    
+    width: 90%;
+    margin: 0 auto;
+  }
+  

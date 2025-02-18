@@ -1,0 +1,27 @@
+// global/_variables.scss
+
+// Colores principales
+$primary-color: #29A1D3;
+$secondary-color: #ED9918;
+$text-color: #454954;
+$background-color: #F5F5F7;
+$background-unique: #fff;
+$text-color-unique:#fff;
+
+
+// Tipografía
+$font-primary: "Nunito, Arial";
+$font-secondary:"Raleway, sans-serif";
+
+// Espaciado
+$spacing-unit: 8px;
+
+// tamaño de letra
+$base-font-size: 16px; // Base font size
+$reduced-font-size: 14px; // Tamaño reducido para el footer
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

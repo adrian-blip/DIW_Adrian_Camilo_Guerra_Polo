@@ -1,0 +1,111 @@
+
+@use "../global/mixins";
+@use "../global/variables";
+
+// Mixins para media queries
+
+
+
+
+
+
+// Ajustes responsivos para la sección .updates
+.updates {
+  padding: 50px 20px;
+
+  .updates-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    @include mixins.media-md {
+      flex-wrap: wrap;
+    }
+  }
+
+  .update-item {
+    width: 120px;
+    height: 120px;
+    
+    @include mixins.media-md {
+      width: 100px;
+      height: 100px;
+      font-size: 0.9rem;
+    }
+
+    @include mixins.media-sm {
+      width: 80px;
+      height: 80px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+
+
+
+// Mensaje sobre la imagen (Hero)
+
+.position-msg{
+  min-width: 70%;
+  font-size: 26px;
+  h1{
+
+    @include mixins.media-lg {
+      min-width: 80%;
+    }
+  
+    @include mixins.media-sm {
+      font-size: 20px;
+      min-width: 85%;
+    }
+
+} 
+
+    
+  
+
+
+}
+  
+.btn{
+  width: 170px;
+  font-size: 1.2rem;
+  padding: 12px;
+  @include mixins.media-lg{
+    width: 160px;
+    font-size: 1rem;
+    padding: 10px ;
+  }
+
+  @include mixins.media-md{
+    width: 150px;
+    font-size: 0.9rem;
+    padding: 9px ;
+  }
+
+  @include mixins.media-sm{
+    width: 130px;
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  
+
+  
+}
+ 
+
+.container-footer{
+  
+  justify-content: space-between;
+  
+
+  @include mixins.media-sm{
+    justify-content: center;
+  }
+}
+
+
+
+  

@@ -1,0 +1,46 @@
+// components/_buttons.scss
+@use "../global/variables";
+
+// Asegurar que los botones estén bien alineados
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; // Espaciado entre botones
+  justify-content: left;
+  gap: 10px;
+  
+  margin-top: 20px;
+}
+
+// Estilo base para los botones
+.btn {
+
+  display: inline-block;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Estilo específico para cada tipo de botón
+.btn-primary {
+  background-color: variables.$primary-color;
+  color: variables.$text-color-unique;
+  
+
+}
+
+.btn-secondary {
+  background-color: variables.$secondary-color;
+  color: variables.$text-color-unique;
+
+ 
+}
+
+

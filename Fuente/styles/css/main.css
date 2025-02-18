@@ -1,0 +1,366 @@
+@charset "UTF-8";
+.updates {
+  padding: 50px 20px;
+}
+.updates .updates-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .updates .updates-items {
+    flex-wrap: wrap;
+  }
+}
+.updates .update-item {
+  width: 120px;
+  height: 120px;
+}
+@media (max-width: 768px) {
+  .updates .update-item {
+    width: 100px;
+    height: 100px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .updates .update-item {
+    width: 80px;
+    height: 80px;
+    font-size: 0.8rem;
+  }
+}
+
+.position-msg {
+  min-width: 70%;
+  font-size: 26px;
+}
+@media (max-width: 992px) {
+  .position-msg h1 {
+    min-width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .position-msg h1 {
+    font-size: 20px;
+    min-width: 85%;
+  }
+}
+
+.btn {
+  width: 170px;
+  font-size: 1.2rem;
+  padding: 12px;
+}
+@media (max-width: 992px) {
+  .btn {
+    width: 160px;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    width: 150px;
+    font-size: 0.9rem;
+    padding: 9px;
+  }
+}
+@media (max-width: 576px) {
+  .btn {
+    width: 130px;
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+
+.container-footer {
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .container-footer {
+    justify-content: center;
+  }
+}
+
+/* Reinicio de estilos para evitar problemas de compatibilidad */
+body {
+  background-color: #F5F5F7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* base/_tipografia.scss */
+@font-face {
+  font-family: "Nunito";
+  src: url("../../../media/fonts/Nunito/Nunito-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../../../media/fonts/Raleway/Raleway-Regular.ttf");
+}
+h1, h2, h3, h4, h5, h6, nav {
+  font-weight: bold;
+  font-family: "Raleway";
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Nunito";
+}
+
+a {
+  font-size: 16px;
+  font-family: "Nunito";
+}
+
+footer {
+  color: #454954;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container-main {
+  width: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+.updates {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+.updates .container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.updates h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #454954;
+}
+.updates .updates-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.updates .update-item {
+  width: 120px;
+  height: 120px;
+  background-color: #29A1D3;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+.updates .update-item:hover {
+  background-color: adjust-brightness(#29A1D3, 1.1);
+  transform: scale(1.1);
+}
+.updates .update-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  fill: white;
+}
+
+.header {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.items-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  height: 100vh;
+  width: 300px;
+  background-color: #fff;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.nav-menu .close-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 10px;
+}
+.nav-menu ul {
+  list-style: none;
+  padding: 2rem;
+  margin: 0;
+}
+.nav-menu ul li {
+  margin-bottom: 1.5rem;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.nav-menu ul li a:hover {
+  color: #29A1D3; /* Color al pasar el ratón */
+}
+.nav-menu.active {
+  display: block; /* Menú visible al añadir la clase 'active' */
+}
+
+.menu-toggle {
+  cursor: pointer;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  width: 32px;
+  font-size: 24px;
+  color: #ED9918;
+}
+
+.footer {
+  background-color: #454954;
+  color: #fff;
+  text-align: center;
+  padding: 32px 0;
+}
+.footer a {
+  color: #ED9918;
+}
+.footer a:hover {
+  color: rgb(240.686746988, 173.8915662651, 71.313253012);
+}
+.footer p {
+  margin-bottom: 8px;
+}
+
+.container-footer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #29A1D3;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #ED9918;
+  color: #fff;
+}
+
+.imagen-hero {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  max-height: 90vh;
+}
+
+.position-msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.position-msg img {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-align: justify;
+}
+
+.hero {
+  background-color: #fff;
+  position: relative;
+}
+
+/*# sourceMappingURL=main.css.map */

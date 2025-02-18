@@ -1,0 +1,20 @@
+// Archivo principal: main.scss
+// Importar medias quieris
+@use "../sass/global/media-queries";
+// Importar variables y mixins
+@use "../sass/global/variables";
+@use "../sass/global/mixins";
+
+// usear estilos base
+@use "../sass/base/resets";
+@use "../sass/base/typography";
+
+// usear layout y posicionamiento
+@use "../sass/position/layout";
+@use "../sass/position/header";
+@use "../sass/position/footer";
+
+// usear componentes
+@use "../sass/components/buttons";
+@use "../sass/components/hero";
+@use "../sass/components/sections";
