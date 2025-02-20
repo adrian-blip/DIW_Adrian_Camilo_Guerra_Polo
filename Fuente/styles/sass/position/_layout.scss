@@ -1,5 +1,11 @@
 // position/_layout.scss
 @use "../global/variables";
+ body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 
 .container-main {
   width: 100%;

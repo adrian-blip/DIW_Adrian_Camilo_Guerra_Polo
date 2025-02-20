@@ -1,9 +1,15 @@
 // position/_footer.scss
 @use "../global/variables";
 
-.footer {
+//interpolacion
+$color: #fff;
+
+
+
+
+.footer-#{$color}{
     background-color: variables.$text-color;
-    color: #fff;
+    color: $color;
     text-align: center;
     padding: variables.$spacing-unit * 4 0;
   

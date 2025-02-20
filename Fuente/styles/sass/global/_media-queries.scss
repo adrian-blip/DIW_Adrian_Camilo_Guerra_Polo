@@ -2,7 +2,7 @@
 @use "../global/mixins";
 @use "../global/variables";
 
-// Mixins para media queries
+
 
 
 
@@ -10,8 +10,18 @@
 
 
 // Ajustes responsivos para la sección .updates
+$dark-mode: false;
+
 .updates {
   padding: 50px 20px;
+
+  @if $dark-mode {
+    background-color: #222;
+    color: white;
+  } @else {
+    background-color: white;
+    color: black;
+  }
 
   .updates-items {
     display: flex;
@@ -22,6 +32,8 @@
       flex-wrap: wrap;
     }
   }
+
+
 
   .update-item {
     width: 120px;
