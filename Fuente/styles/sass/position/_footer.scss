@@ -8,6 +8,8 @@ $color: #fff;
 
 
 .footer-#{$color}{
+    position: relative;
+    bottom: 0;
     background-color: variables.$text-color;
     color: $color;
     text-align: center;
