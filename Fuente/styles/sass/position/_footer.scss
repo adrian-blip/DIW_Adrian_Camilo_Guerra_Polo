@@ -7,13 +7,14 @@ $color: #fff;
 
 
 
-.footer-#{$color}{
+.footer{
     position: relative;
     bottom: 0;
     background-color: variables.$text-color;
     color: $color;
     text-align: center;
     padding: variables.$spacing-unit * 4 0;
+    margin-top: 30px;
   
     a {
       color: variables.$secondary-color;

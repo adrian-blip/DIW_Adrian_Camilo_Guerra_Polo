@@ -1,0 +1,165 @@
+@use "../global/variables";
+
+.container-form {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: variables.$breakpoint-md;
+
+    
+}
+
+.margin{
+    margin-top: 30px;
+}
+
+// Estilo del formulario
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: variables.$spacing-unit * 2;
+    background: variables.$background-unique;
+    padding: variables.$spacing-unit * 3;
+    border-radius: variables.$spacing-unit / 2; // Uso de operador de división
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: variables.$spacing-unit * 4;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: variables.$breakpoint-sm;
+        
+        label {
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: variables.$spacing-unit / 2;
+        }
+
+        input {
+            padding: variables.$spacing-unit;
+            border: 1px solid #ccc;
+            border-radius: variables.$spacing-unit / 2;
+            font-size: variables.$base-font-size;
+        }
+
+        .area{
+            border: 1px solid #ccc;
+            
+        }
+
+    }
+
+    .btn {
+        background-color: variables.$primary-color;
+        color: variables.$text-color-unique;
+        border: none;
+        padding: variables.$spacing-unit * 1.5;
+        border-radius: variables.$spacing-unit / 2;
+        cursor: pointer;
+        font-size: variables.$base-font-size;
+        width: 180px; // Uso de operador de división
+
+        &:hover {
+            background-color: darken(variables.$primary-color, 10%);
+        }
+    }
+}
+
+// Contenedor del PDF
+.pdf-container {
+    width: 100%;
+    max-width: variables.$breakpoint-md; // Uso de variable global
+    height: 80vh;
+    background: darken(variables.$background-color, 5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: variables.$spacing-unit / 2;
+    overflow: auto;
+
+    iframe {
+        border: none;
+    }
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: variables.$background-unique;
+    padding: variables.$spacing-unit * 4;
+    border-radius: variables.$spacing-unit;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+
+    h1 {
+        margin-bottom: variables.$spacing-unit * 2;
+        color: variables.$text-color;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: variables.$spacing-unit * 2;
+
+        label {
+            text-align: left;
+            font-weight: bold;
+            color: variables.$text-color;
+            font-size: variables.$base-font-size;
+        }
+
+        input {
+            padding: variables.$spacing-unit;
+            border: 1px solid #ccc;
+            border-radius: variables.$spacing-unit;
+            font-size: variables.$base-font-size;
+        }
+
+        button {
+            background-color: variables.$primary-color;
+            color: variables.$text-color-unique;
+            border: none;
+            padding: variables.$spacing-unit;
+            border-radius: variables.$spacing-unit;
+            cursor: pointer;
+            font-size: variables.$base-font-size;
+            transition: background 0.3s;
+
+            &:hover {
+                background-color: darken(variables.$primary-color, 10%);
+            }
+        }
+    }
+
+    .forgot-password,
+    .register-link {
+        display: block;
+        margin-top: variables.$spacing-unit * 2;
+        font-size: variables.$reduced-font-size;
+        color: variables.$secondary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+   
+
+
+
+
+}
+
+
