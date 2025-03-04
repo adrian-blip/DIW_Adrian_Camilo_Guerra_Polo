@@ -4,14 +4,26 @@
   "description": "translating-sass",
   "scripts": {
     "compilar-sass": "sass Fuente/styles/sass:Fuente/styles/css --source-map",
-    "monitorizar-sass": "sass --watch Fuente/styles/sass:Fuente/styles/css --source-map"
+    "monitorizar-sass": "sass --watch Fuente/styles/sass:Fuente/styles/css --source-map",
+    "dev:parcel": "parcel index.html Fuente/html/*.html --dist-dir dev",
+    "build:parcel": "parcel build index.html Fuente/html/*.html --dist-dir build",
+    "limpia:dev": "rimraf dev .parcel-cache",
+    "limpia:build": "rimraf build .parcel-cache",
+    "copiarDev:media": "sleep 5 && cp -r Fuente/media/ dev/Fuente/media",
+    "copiarBuild:media": "sleep 5 && cp -r Fuente/media/ build/Fuente/media",
+    "dev:todo": "run-s limpia:dev && run-p dev:parcel copiarDev:media",
+    "build:todo": "run-s limpia:build && run-p build:parcel copiarBuild:media"
   },
   "author": "Adrian Guerra",
   "license": "ISC",
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.13.3",
+    "rimraf": "^6.0.1",
     "sass": "^1.83.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2"
+    
   }
 }
