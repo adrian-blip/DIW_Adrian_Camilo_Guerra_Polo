@@ -7,4 +7,4 @@
 >
 > Creado por: **Adrian camilo guerra polo**  
 ### Cambios importantes:
-- **Correcciones destacadas**: Cada corrección importante (interpolación en `footer.scss`, estructura de control en `_media-queries.scss`, y operadores en `_functions.scss`) se señala específicamente en una sección separada, con una breve explicación.
+- Parcel y resto de secciones agregadas.
