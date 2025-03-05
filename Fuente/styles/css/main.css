@@ -315,6 +315,12 @@ main {
   margin: 0 auto;
 }
 
+.group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 3px !important;
+}
+
 .buttons {
   display: flex;
   flex-direction: row;
