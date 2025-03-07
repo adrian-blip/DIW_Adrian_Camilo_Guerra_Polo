@@ -1,14 +1,15 @@
 @use "../global/variables";
+//Interpolacion
+$width: 768px;
 
 .container-form {
     text-align: center;
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
-    max-width: variables.$breakpoint-md;
-
-    
+    max-width: #{$width}; // Interpolación aquí
 }
+
 
 .margin{
     margin-top: 30px;
