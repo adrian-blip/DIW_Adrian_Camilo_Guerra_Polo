@@ -1,5 +1,6 @@
 
 
+
 // Selección de elementos
 const menu = document.querySelector(".nav-menu");
 const openBtn = document.querySelector(".menu-toggle");
