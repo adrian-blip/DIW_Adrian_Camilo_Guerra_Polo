@@ -1,31 +1,19 @@
 {
-  "name": "sass",
+  "name": "colombiajuridicasass",
   "version": "1.0.0",
-  "description": "translating-sass",
+  "description": "Proyecto migrado a Vite",
   "scripts": {
-    "compilar-sass": "sass Fuente/styles/sass:Fuente/styles/css --source-map",
-    "monitorizar-sass": "sass --watch Fuente/styles/sass:Fuente/styles/css --source-map",
-    "dev:parcel": "parcel Fuente/index.html Fuente/html/*.html --dist-dir dev",
-    "build:parcel": "parcel build Fuente/index.html Fuente/html/*.html --dist-dir build",
-    "limpia:dev": "rimraf dev .parcel-cache",
-    "limpia:build": "rimraf build .parcel-cache",
-    "copiarDev:media": "cpx 'Fuente/media/**/*' dev/Fuente/media",
-    "copiarBuild:media": "cpx 'Fuente/media/**/*' build/Fuente/media",
-    "dev:todo": "run-s limpia:dev && run-p dev:parcel copiarDev:media",
-    "build:todo": "run-s limpia:build && run-p build:parcel copiarBuild:media"
-  },
-  "author": "Adrian Guerra",
-  "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.3",
-    "cpx": "^1.5.0",
-    "npm-run-all": "^4.1.5",
-    "parcel": "^2.13.3",
-    "rimraf": "^6.0.1",
-    "sass": "^1.83.4",
-    "svgo": "^3.3.2"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rimraf dev .vite"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2"
+    "sass": "^1.85.1",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "vite": "^5.0.0"
   }
 }
