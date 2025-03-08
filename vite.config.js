@@ -3,18 +3,18 @@ import { resolve } from 'path';
 import { createHtmlPlugin } from 'vite-plugin-html';
 
 export default defineConfig({
-  appType: 'mpa',  // Para soportar múltiples páginas HTML
+  appType: 'mpa',
   base: './',
-  root: resolve(__dirname, 'Fuente'),
+  root: resolve(__dirname, 'fuente'),
   build: {
-    outDir: '../dev',  // Directorio de salida para desarrollo
+    outDir: '../produccion',
     emptyOutDir: true,
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'Fuente/index.html'),
         constitucion: resolve(__dirname, 'Fuente/html/constitucion.html'),
         contacto: resolve(__dirname, 'Fuente/html/contacto.html'),
-        iniciarSesion: resolve(__dirname, 'Fuente/html/iniciar-seccion.html'),
+        iniciarsesion: resolve(__dirname, 'Fuente/html/iniciarsecion.html'),
         normativa: resolve(__dirname, 'Fuente/html/normativa.html'),
         registrate: resolve(__dirname, 'Fuente/html/registrate.html'),
         resoluciones: resolve(__dirname, 'Fuente/html/resoluciones.html'),
@@ -22,6 +22,7 @@ export default defineConfig({
     },
     minify: 'terser',
   },
+
   plugins: [
     createHtmlPlugin({
       minify: true,
