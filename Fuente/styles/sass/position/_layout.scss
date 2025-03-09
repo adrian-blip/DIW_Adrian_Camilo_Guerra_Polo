@@ -78,4 +78,30 @@ $hover-brightness: 1.1;
 }
 
 
+.btn-secondary {
+  background-color: #b36b00; /* Naranja oscuro */
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #0077a3; /* Azul más oscuro */
+  color: #ffffff;
+}
+
+.position-msg {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.8); /* Aumenta sombra para más contraste */
+}
+
+a {
+  background-color: #0077a3; /* Azul más oscuro */
+  color: #ffffff;
+}
+
+p {
+  color: #212529; /* Negro suave */
+}
+
+
+
 
