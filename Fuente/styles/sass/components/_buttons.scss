@@ -29,18 +29,15 @@
 }
 
 // Estilo específico para cada tipo de botón
-.btn-primary {
-  background-color: variables.$primary-color;
-  color: variables.$text-color-unique;
-  
-
-}
-
 .btn-secondary {
-  background-color: variables.$secondary-color;
-  color: variables.$text-color-unique;
-
- 
+  background-color: #b36b00; /* Naranja oscuro */
+  color: #ffffff;
 }
+
+.btn-primary {
+  background-color: #0077a3; /* Azul más oscuro */
+  color: #ffffff;
+}
+
 
 
