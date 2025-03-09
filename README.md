@@ -7,4 +7,5 @@
 >
 > Creado por: **Adrian camilo guerra polo**  
 ### Cambios importantes:
-- Parcel y resto de secciones agregadas.
+-[📄 Ver reporte de accesibilidad](./Fuente/media/pdf/Tarea%2014.pdf)
+
